@@ -1,0 +1,27 @@
+﻿body {
+}
+.container {
+	width: 65%;
+	margin: 0 auto;
+}
+.btn {
+	height: 50px;
+	width: 150px;
+	cursor: pointer;
+}
+h1 {
+	text-align: center;
+	font-weight: 100;
+}
+.right {
+	text-align: right !important;
+}
+#input {
+	margin: 0 auto !important;
+	max-width: none !important;
+}
+@media (max-width: 480px){
+	.container {
+		width: 100%;
+	}
+}
