@@ -1,0 +1,25 @@
+﻿h1 {
+	text-align: center;
+	font-weight: 100;
+	font-family;
+	sans-serif;
+}
+
+.btn {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+td {
+	padding: 0 !important;
+}
+
+.container {
+	width: 60%;
+}
+
+.weekend {
+	color: white;
+	background: #666;
+}

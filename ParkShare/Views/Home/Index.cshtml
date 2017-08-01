@@ -1,56 +1,84 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "About";
 }
-@Scripts.Render("~/Scripts/script.js")
+@Scripts.Render("~/Scripts/indexScript.js")
 @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+<head>
+	<link href="@Url.Content("~/Content/indexStyle.css")" rel="stylesheet" type="text/css" />
+</head>
 <h1>Catalysis Parking App</h1>
 <div class="container">
-	<hr>
-	<div>
-		<form id="form">
-			<div class="form-group">
-				<input id="input" class="form-control text-center" placeholder="Enter Your Name Then Select A Spot" />
-			</div>
-		</form>
+	<div class="table-responsive text-center">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td>Sun</td>
+					<td>Mon</td>
+					<td>Tues</td>
+					<td>Wed</td>
+					<td>Thurs</td>
+					<td>Fri</td>
+					<td>Sat</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="weekend">31</td>
+					<td>
+						<button class="btn btn-primary">1</button><br>Spaces: <span id="1">4</span>
+					</td>
+					<td>
+						<button class="btn btn-primary">2<br>Spaces: <span id="two">4</span></button>
+					</td>
+					<td>
+						<button class="btn btn-primary">3 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">4 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">5 <br>Spaces: 4</button>
+					</td>
+					<td class="weekend">6</td>
+				</tr>
+				<tr>
+					<td class="weekend">7</td>
+					<td>
+						<button class="btn btn-primary">8 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">9 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">10 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">11 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">12 <br>Spaces: 4</button>
+					</td>
+					<td class="weekend">13</td>
+				</tr>
+				<tr>
+					<td class="weekend">14</td>
+					<td>
+						<button class="btn btn-primary">15 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">16 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">17 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">18 <br>Spaces: 4</button>
+					</td>
+					<td>
+						<button class="btn btn-primary">19 <br>Spaces: 4</button>
+					</td>
+					<td class="weekend">20</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
-	<div class="row">
-		<div class="col-sm-4">
-			<button class="btn btn-primary" id='Spot1'></button>
-		</div>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4 right">
-			<button class="btn btn-primary" id='Spot2'></button>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-sm-4">
-			<button class="btn btn-primary" id='Spot3'></button>
-		</div>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4 right">
-			<button class="btn btn-primary" id='Spot4'></button>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-sm-4">
-			<button class="btn btn-primary" id='Spot5'></button>
-		</div>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4 right">
-			<button class="btn btn-primary" id='Spot6'></button>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-sm-4">
-			<button class="btn btn-primary" id='Spot7'></button>
-		</div>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4 right">
-			<button class="btn btn-primary" id='Spot8'></button>
-		</div>
-	</div>
-	<hr>
-</div>
