@@ -1,17 +1,24 @@
 ﻿var button = $('.btn');
 
 button.click(function () {
-    var spaces = $(this).text();
+    var spaces = $(this).html();
     var amount = $("#" + spaces);
-    var spacesAvailable;
+    var amountInt = parseInt(amount.html());
 
     if (this.className == "btn btn-primary") {
-        spacesAvailable = amount.text() - 1;
-        amount.text(spacesAvailable);
+        amountInt--;
+        amount.html(amountInt);
         this.className = "btn btn-danger";
     } else {
-        spacesAvailable = amount.text() + 1;
-        amount.text(spacesAvailable);
+        amountInt++;
+        amount.html(amountInt);
         this.className = "btn btn-primary";
     }
 });
+
+function add(int) {
+    return int + 1;
+}
+function subtract(int) {
+    return int - 1;
+}
